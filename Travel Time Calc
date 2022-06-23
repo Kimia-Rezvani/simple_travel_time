@@ -1,0 +1,18 @@
+#! /usr/bin/env python3
+
+print("Travel Time Calculator\n")
+
+miles = 0
+speed = 0
+
+miles += int(input("Enter miles: "))
+speed += int(input("Enter miles per hour: "))
+
+print("Estimated travel time\n")
+
+time = (miles / speed )
+hour = round(time)
+minutes = round((time - hour) * 60)
+
+print("Hours: ", hour,
+      "\nMinutes: ", minutes)
